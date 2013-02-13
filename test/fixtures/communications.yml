@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  answering_machine: MyString
+  call_status: MyString
+  outcome: MyString
+
+two:
+  answering_machine: MyString
+  call_status: MyString
+  outcome: MyString

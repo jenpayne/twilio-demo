@@ -1,0 +1,26 @@
+Jennifer Payne Twilio Demo 8/4/2012
+
+This is the code repository for a short demo I did on Twilio for the Steel City Ruby Conference 2012.  All code here was not part of the demo, nor tested, and quite possibly may not be functioning at all as I was playing around with a lot of different things coming up with what to demo.  I will patch as necessary in the future.
+
+Demo Code
+
+Additional code run during the demo include:
+
+To initiate a call:
+  @call = TwilioClient.account.calls.create(:from => '', :to => '', :url => "http://warm-coast-4231.herokuapp.com/communication/snow_call.xml")
+  
+To initiate a text
+  @text = TwilioClient.account.sms.messages.create(:from => '', :to => '', :body => "This is a text from Twilio!")
+  
+To get a list of calls made:
+  calls = TwilioClient.account.calls.list
+  
+  first_call = calls.first
+  
+  first_call.price
+  first_call.duration
+  first_call.from
+  
+  
+To get a list of SMS messages made:
+  messages = account.sms.messages.list

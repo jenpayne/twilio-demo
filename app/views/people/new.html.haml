@@ -1,0 +1,9 @@
+= simple_form_for(@person, :url => people_path) do |f|
+  %h3 Person
+  %p= f.input :first_name, :label => 'First Name'
+  %p= f.input :last_name, :label => 'Last Name'
+  %p= f.input :phone_number, :label => 'Phone Number'
+
+  = f.button :submit, :id => 'save_button'
+  = link_to 'Cancel', new_person_path, {:class => 'cancel'}
+  .clear
